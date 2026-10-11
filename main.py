@@ -1,11 +1,38 @@
-# 4A- Codeforces - A. Watermelon
-inputWeight: int = int (input("Input the A. Watermelon Weight: "))
-devidedWeight = inputWeight / 2
+a: int = int (input ("enter the input value of a: ")) 
+b: int = int (input ("enter the input value of b: "))
 
-if (inputWeight > 0 and inputWeight < 101):
-    if (devidedWeight % 2 == 0):
-        print("YES")
+
+if (a <=b):
+    for num in range(10):
+        if a == num:
+            while num < 10:
+                if (num == 1):
+                    print("one")
+                elif(num == 2):
+                    print("two")
+                elif(num == 3):
+                    print("three")
+                elif(num == 4):
+                    print("four")
+                elif(num == 5):
+                    print("five")
+                elif(num == 6):
+                    print("six")
+                elif(num == 7):
+                    print("seven")
+                elif(num == 8):
+                    print("eight")
+                elif(num == 9):
+                    print("nine")
+                num += 1
+    if(a%2 == 0):
+        print("even")
     else:
-        print("NO")
+        print("odd")
+    
+    if(b%2 == 0):
+        print("even")
+    else:
+        print("odd")
 else:
-    print("the inputWeight range must between 0<w<100")
+    print("the number of a is must less equal to b")
